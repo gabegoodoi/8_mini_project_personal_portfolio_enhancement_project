@@ -1,0 +1,93 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+body {
+    background: linear-gradient(to top right, #003b23, #001e28);
+    height: 100vh
+}
+
+
+ul {
+    height: 5vh;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 2px;
+    margin: 2px;
+    font-size:large;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    padding-right: 2vw;
+}
+
+header {
+    text-align: center;
+    font-size: 2.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 20vw;
+    border-radius: 50%;
+    box-shadow: 1vw -1vw 4vw rgba(0, 0, 0, 0.721);
+}
+
+h1 {
+    background: linear-gradient(
+        to top right,
+        rgb(160, 112, 0),
+        rgb(238, 255, 177),
+        #ffde72,
+        rgb(160, 112, 0)
+      ) no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2 {
+    font-weight:100;
+    background: linear-gradient(
+        to bottom right,
+        rgb(160, 112, 0),
+        rgb(238, 255, 177),
+        #ffde72,
+        rgb(160, 112, 0)
+      ) no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    margin-bottom: .1vw;
+    padding-bottom: 0;
+}
+
+a {
+    color: #ffde72;
+    text-decoration: none;
+    padding: .3vw;
+    transition: color 1s ease, font-size 1s ease;
+}
+
+a:hover {
+    color:rgb(43, 255, 0);
+    font-size: 1.5vw;
+}
+
+.content {
+    display: flex;
+    color: #ffde72;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

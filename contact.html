@@ -1,60 +1,64 @@
-<!--
-5. Contact Page/Section:
-    Provide a way for visitors to get in touch with you.
-    Include a contact form, your email address, and links to your social media profiles.
--->
-
-
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Portfolio - Contact</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="c_style.css">
     </head>
 
     <body>
-        <section>
+        <div class="grid-container">
+
+            <nav class="nav-bar">
+                <ul>
+                        <li class="nav-item"><a href="home.html">Home</a></li>
+                        <li class="nav-item"><a href="about_me.html">About Me</a></li>
+                        <li class="nav-item"><a href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+
+
             <header>
                 <h1>
                     Contact Me @
                 </h1>
             </header>
 
-            If you'd like to get in touch, you can reach me by email at <a href=mailto:gabegodoi@gmail.com>gabegodoi@gmail.com</a> or fill out the form below:
+            <div class="blurb">
+                If you'd like to get in touch, you can reach me by email at <a href=mailto:gabegodoi@gmail.com>gabegodoi@gmail.com</a> or fill out the form below:
+            </div>
 
-            <form >
-                <br>
-                <input type="text" name="full name" placeholder="Full Name" autocomplete="on" action="/contact-inquiries" pattern="[a-zA-Z]{2,}[.]* [a-zA-Z]{1,}[.]*" required>
-                <input type="email" name="email" placeholder="Email Address" autocomplete="on" action="/contact-inquiries" required><br><br>
-                <textarea name="message" placeholder="enter your message here" rows="4" cols="34" required></textarea><br>
-                <input type="submit">
+            <form class="contact-form">
+                <div class="name-email">
+                    <input type="text" name="full name" placeholder="Full Name" autocomplete="on" action="/contact-inquiries" pattern="[a-zA-Z]{2,}[.]* [a-zA-Z]{1,}[.]*" required>
+                    <input type="email" name="email" placeholder="Email Address" autocomplete="on" action="/contact-inquiries" required>
+                </div>
+                <textarea name="message" placeholder="Enter your message here" rows="4" cols="34" required></textarea><br>
+                <input class="submit" type="submit">
             </form>
 
-                <h2>
-                    Follow Me @
-                </h2>
+            <div class="socials">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gabegodoi/"><img src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn" height="50"></a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/GabeGodoi"><img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png" alt="Twitter" height="50"></a>
+                    </li>
+                    <li>
+                        <a href="https://letterboxd.com/godoi/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Letterboxd_2023_logo.png" alt="Letterboxd" height="40"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/godoigabe/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" height="40"></a>
+                    </li>
+                    <li>
+                        <a href="https://bsky.app/profile/gabegodoi.bsky.social"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="BlueSky" height="40"></a>
+                    </li>
+                </ul>
 
-                <a href="https://www.linkedin.com/in/gabegodoi/"><img src="https://static.vecteezy.com/system/resources/previews/023/986/970/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn" height="50"></a>
-                <a href="https://x.com/GabeGodoi"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Logo_Twitter.png" alt="Twitter" height="50"></a>
-                <a href="https://letterboxd.com/godoi/"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Letterboxd_2023_logo.png" alt="Letterboxd" height="40"></a>
-                <a href="https://www.instagram.com/godoigabe/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" height="40"></a>
-                <a href="https://bsky.app/profile/gabegodoi.bsky.social"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bluesky_Logo.svg/2319px-Bluesky_Logo.svg.png" alt="BlueSky" height="40"></a>
-
-
-
-
-
-            <h2>Other Pages</h2>
-            <ul>
-                <h3>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/home.html">Home</a></li>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/about_me.html">About Me</a></li>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/projects.html">Projects</a></li>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/skills.html">Skills</a></li>
-                </h3>
-            </ul>
-
-        </section>
+            </div>
+        </div>   
     </body>
 </html>

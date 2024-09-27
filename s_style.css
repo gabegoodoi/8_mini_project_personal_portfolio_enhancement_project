@@ -1,0 +1,140 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    min-height: 100vh;
+    align-items: stretch;
+    color: antiquewhite;
+}
+
+body {
+    background: linear-gradient(to top left, #003b23, #001e28);
+    padding: 2vw;
+}
+
+.nav-bar {
+    grid-column: span 5;
+}
+
+.nav-bar > ul {
+    height: 5vh;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 2px;
+    margin: 2px;
+    font-size:large;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    padding-right: 2vw;
+}
+
+h1 {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom left,
+        rgb(160, 112, 0),
+        rgb(238, 255, 177),
+        #ffde72,
+        rgb(160, 112, 0)
+      ) no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    margin-top: 2vw;
+    padding-top: 0;
+    font-size: 3vw;
+    align-items: center;
+    text-align: center; 
+}
+
+h2 {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    align-items: center;
+    text-align: center; 
+}
+
+
+a {
+    color: #ffde72;
+    text-decoration: none;
+    padding: .3vw;
+    transition: color 1s ease, font-size 1s ease;
+}
+
+a:hover {
+    color:rgb(43, 255, 0);
+    font-size: 1.5vw;
+}
+
+.prog-list {
+    list-style: none;
+    list-style-type: none;
+}
+
+.icons {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icons > img {
+    height: 6vw;
+    width: auto;
+    padding: 1vw;
+}
+
+ul > li {
+    font-size: 1.75vw;
+}
+
+.two {
+    grid-column: 2/3;
+}
+
+.three {
+    grid-column: 3/4;
+}
+
+.four {
+    grid-column: 4/5;
+}
+
+@media screen and (max-width:768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .two > *, .three  > *, .four > * {
+        font-size: 3vw;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icons > img {
+        height: 30vw;
+        width: auto;
+        padding: 1vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+}

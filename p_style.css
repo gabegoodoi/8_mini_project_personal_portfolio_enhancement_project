@@ -1,0 +1,192 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    align-items: stretch;
+    color: antiquewhite;
+}
+
+.nav-bar {
+    gap: 0
+}
+
+body {
+    background: linear-gradient(to top left, #003b23, #001e28);
+    padding: 2vw;
+}
+
+.nav-bar > ul {
+    height: 5vh;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 2px;
+    margin: 2px;
+    font-size:large;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item, .multimedia-list {
+    padding-right: 2vw;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom left,
+        rgb(160, 112, 0),
+        rgb(238, 255, 177),
+        #ffde72,
+        rgb(160, 112, 0)
+      ) no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 3vw;
+    align-items: center;
+}
+
+a {
+    color: #ffde72;
+    text-decoration: none;
+    padding: .3vw;
+    transition: color 1s ease, font-size 1s ease;
+}
+
+a:hover {
+    color:rgb(43, 255, 0);
+    font-size: 1.5vw;
+}
+
+.games, .docs, .branded-docs, .multimedia, .programming {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 1vw;
+}
+
+iframe {
+    width: 23%;    
+    box-shadow:  -10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin: .5%;
+    border-radius: 1vw;
+}
+
+.design-list > li {
+    padding-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.design-list {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom right, #000000, #003035);
+    padding: 1vw;
+    padding-top: 0;
+    padding-bottom: 2vw;
+    border-radius: 1vw;
+    box-shadow:  -10px 10px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
+.games-list, .docs-list, .branded-docs-list {
+    padding-top: 1vw;
+}
+
+h3 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+        to bottom right,
+        rgb(160, 112, 0),
+        #ffde72,
+        rgb(160, 112, 0)
+      ) no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    margin-top: 0;
+    margin-bottom: .6vw;
+    padding-top: 2vw;
+    font-size: 2.3vw;
+    align-items: center;
+}
+
+.multimedia-list > li {
+    background-color:rgba(43, 255, 0, 0.629);
+    display: inline;
+    list-style-type: none;
+    font-size: 1.3vw;
+    align-items: center;
+    justify-content: center;
+    padding: .5vw;
+    border-radius: 10vw;
+    margin: 0;
+    margin-right: 3%;
+    box-shadow:  -10px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease, font-size 0.5s ease;
+}
+
+.multimedia-list > li:hover {
+    background-color: #ffc400;
+    font-size: 1.6vw;
+}
+
+.ma {
+    color: #000000;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.multimedia-list {
+    padding-top: 1vw;
+}
+
+
+@media screen and (max-width:990px) {
+    .multimedia-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }  
+
+    .multimedia-list > li {
+        font-size: 4vw;
+        margin: 2vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        display: flex;
+        flex-direction: column;
+        box-shadow:  -10px 10px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 1vw;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width:fit-content;
+        margin-top: 2vw;
+    }
+
+    .design-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .games-list, .docs-list, .branded-docs-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+

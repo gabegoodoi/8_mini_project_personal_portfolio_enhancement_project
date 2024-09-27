@@ -1,64 +1,39 @@
-<!-- 
- Project Requirements: 
-
-Here is a provide list of sections AND/OR pages. Since this is a portfolio, we wanted to provide the autonomy for you to organize it how you choose. These are the requirements below. If you want them to all be on separate pages, then that works! If you want them all on one page but in their own sections, then that works as well! 
-
-1. Home Page/Section:
-    The main landing page that provides an introduction to you and your portfolio.
-    May include a brief bio, your name, a profile picture, and a welcome message.
-
-2. About Me Page/Section:
-    A page that offers more detailed information about yourself.
-    Include your background, education, career goals, and personal interests.
-
-3. Projects Page/Section:
-    Showcase your past projects and works.
-    Include project descriptions, images, links, and any technologies or tools used.
-
-4. Skills Page/Section:
-    Highlight your technical skills, languages, frameworks, and software proficiency.
-    You can use a visual representation like a skill bar or chart.
-
-5. Contact Page/Section:
-    Provide a way for visitors to get in touch with you.
-    Include a contact form, your email address, and links to your social media profiles.
-
-6. GitHub Repository:
-    Create a GitHub repository for the project and commit code regularly.
-    Maintain a clean and interactive README.md file in the GitHub repository, providing clear instructions on how to run the application and explanations of its features.
-    Include a link to the GitHub repository in the project documentation.
--->
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>Portfolio - Home</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="h_style.css">
     </head>
 
     <body>
-        <section>
-            <header>
-                <h1>
-                    Welcome to Gabe Godoi's Portfolio! 
-                    <br>
-                    <br>
-                    <img src="circle.PNG" alt="Photo portrait of Gabe Godoi" width="300">
-                </h1>
-            </header>
+
+        <div class="grid-container">
+
+            <nav class="nav-bar">
+
+                <ul>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </nav>
             
-            My name is Gabe Godoi. You've reached the home page of my portfolio. <br> Click through to the other webpages to find information about who I am, what projects I've made, my skills, & my contact information. <br>Thanks for taking a look. 
 
-            <h2>Other Pages</h2>
-            <ul>
-                <h3>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/about_me.html">About Me</a></li>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/projects.html">Projects</a></li>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/skills.html">Skills</a></li>
-                    <li><a href="file:///Users/gabrielgodoi/Coding_Temple/mini_projects/7_mini_project_personal_portfolio/contact.html">Contact</a></li>
-                </h3>
-            </ul>
+            <header class="title">
+                <h2>Get to know</h2>
+                <h1>Gabe Godoi</h1>
+                <img src="circle.PNG" alt="Photo portrait of Gabe Godoi" width="300">
+            </header> 
+            
 
-        </section>
+            <div class="content">
+                Thanks for stopping by!
+            </div>
+
+        </div>
     </body>
 </html>
